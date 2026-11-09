@@ -1,0 +1,17 @@
+/* Elefante Café · propuesta de diseño */
+body{margin:0;background:#E9ECDF;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+img{max-width:100%}
+a:hover{opacity:.88}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.arch{border-radius:999px 999px 24px 24px;overflow:hidden}
+.carta{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#F7F5EC;border-radius:20px;padding:24px 24px 14px}
+.card li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid #E3E2D6}
+.feat{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:820px){.wrap{padding:0 20px}.hero,.feat,.split{grid-template-columns:1fr;gap:28px}.carta{grid-template-columns:1fr}.hide-s{display:none}}
